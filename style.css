@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+/* start - css reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(141, 177, 244);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* start - css reset */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: rgb(110, 110, 185);
+    padding: 20px;
+
+}
+
+@media (width <500px) {
+    .nav{flex-wrap: wrap;}
+    
+}
+.logo {
+    color: rgb(120, 184, 241);
+    border: solid;
+    padding: 10px;
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(120, 184, 241);
+    font-size: large;
+    padding: 10px;
+    border: solid;
+}
+
+.nav a:hover {
+    background-color: lightblue;
+    transition: 500ms;
+}
+
+.s1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.s1>h1 {
+    grid-column: 1;
+
+    color: rgb(110, 110, 185);
+    margin-top: 20px;
+}
+
+.s1>.bilde1 {
+    grid-column: 1;
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+
+
+
+.s1>.text-box {
+    display: flex;
+    flex-direction: column;
+    /*  border: solid white; */
+    grid-column: 2/4;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.like {
+    background-color: rgb(110, 110, 185);
+    color: rgb(120, 184, 241);
+}
+
+.container-like {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.like>h2 {
+    padding: 20px;
+}
+
+.container-like img {
+    border-radius: 15%;
+    max-width: 200px;
+    flex: 1;
+    /* aspect-ratio: 3/4;
+    object-fit: cover; */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    color: rgb(110, 110, 185);
+    
+
+
+}
+
+
+.logo2 {
+    color: rgb(110, 110, 185);
+    border: solid;
+    padding: 10px;
+    font-family: "Playwrite DE SAS", cursive;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* timeplan */
+
+.timeplan {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.timeplan th,
+.timeplan td {
+    border: 2px solid rgb(83, 83, 180);
+    padding: 15px;
+    text-align: center;
+}
+
+.timeplan th {
+    background-color: darkblue;
+    color: rgb(110, 110, 185);
+}
+
+.tid {
+    background-color: darkblue;
+    color: rgb(110, 110, 185);
+}
+
+.lunsj {
+    background-color: rgb(59, 59, 186);
+}
+
+.table {
+    background-color: rgb(110, 110, 185);
+    color: rgb(120, 184, 241);
+}
+
+.table .logo2 {
+    color: rgb(120, 184, 241);
+}
+
+/* interesser */
+main{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dansing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.dansing>img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+
+.text-dans {
+    background-color: rgb(110, 110, 185);
+    color: rgb(120, 184, 241);
+    grid-row: 1 / 3;
+    
+}
+
+
+
+.test {
+    background-image: url(./bilder/chateuneff.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.nr1 {
+
+    background-image: url(./bilder/nr1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.show {
+    background-image: url(./bilder/show.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.dance {
+    background-image: url(./bilder/dans.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.headding {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(110, 110, 185);
+}
+
+.reise {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.tekst-reise {
+    background-color: rgb(110, 110, 185);
+    color: rgb(120, 184, 241);
+    grid-row: 1 / 3;
+    grid-column: 3/-1;
+
+}
+
+.estland {
+    background-image: url(./bilder/estland.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.italia {
+    background-image: url(./bilder/italia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.slott {
+    background-image: url(./bilder/slott.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.solnedgang {
+    background-image: url(./bilder/solnedgang.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    border-radius: 10%;
+}
+
+.img-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+
+} 
+
+ 
+.img-container img {
+    max-width: 200px;
+    aspect-ratio: 9/16;
+    object-fit: contain;
+}
+
+
+
